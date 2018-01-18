@@ -12,6 +12,7 @@ public class Main {
             } catch (Exception e) {
             }
         }
+        System.out.println(Runner.MAP.score());
         System.exit(0);
     }
 }
