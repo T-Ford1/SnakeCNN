@@ -39,6 +39,10 @@ public class Map {
             return false;
         }
     }
+    
+    public int score() {
+        return snake.score();
+    }
 
     public Tile getTile(int y, int x) {
         return tiles[y][x];

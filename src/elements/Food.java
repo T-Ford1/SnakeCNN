@@ -18,7 +18,7 @@ public class Food {
     private Point food;
     
     public Food() {
-        dropper = new Random(0xDEADBEEF);
+        dropper = new Random();
         nextFood();
     }
     

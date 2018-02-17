@@ -13,7 +13,7 @@ import java.awt.event.KeyListener;
  *
  * @author Terrell
  */
-public class Input implements KeyListener {
+public class Keyboard implements KeyListener {
     
     private static final Point LT = new Point(-1,0);
     private static final Point RT = new Point(1,0);
@@ -22,10 +22,9 @@ public class Input implements KeyListener {
     
     private Point dir;
     
-    public Input() {
+    public Keyboard() {
         dir = RT;
     }
-    
 
     @Override
     public void keyTyped(KeyEvent e) {

@@ -16,7 +16,7 @@ public class Screen {
     
     private final JFrame frame;
     private final GamePanel panel;
-    public final input.Input input;
+    public final input.Keyboard input;
     
     public Screen() {
         frame = new JFrame();
@@ -25,7 +25,7 @@ public class Screen {
         panel.setPreferredSize(new Dimension(400,400));
         frame.pack();
         frame.setLocationRelativeTo(null);
-        frame.addKeyListener(input = new input.Input());
+        frame.addKeyListener(input = new input.Keyboard());
     }
     
     public void makeVisible() {

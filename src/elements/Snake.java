@@ -30,6 +30,10 @@ public class Snake {
         snake.add(last);
         Runner.MAP.getTile(last.y, last.x).setBody();
     }
+    
+    public int score() {
+        return snake.size();
+    }
 
     private Point add(Point a, Point b) {
         return new Point(a.x + b.x, a.y + b.y);
